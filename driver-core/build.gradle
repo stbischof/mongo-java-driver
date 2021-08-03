@@ -65,10 +65,7 @@ afterEvaluate {
     jar.manifest.attributes['Bundle-SymbolicName'] = 'org.mongodb.driver-core'
     jar.manifest.attributes['Import-Package'] = [
         'org.bson.*', // unfortunate that this is necessary, but if it's left out then it's not included
-        'javax.crypto.*',
-        'javax.management.*',
-        'javax.naming.*',
-        'javax.net.*',
+        'javax.*',
         'jdk.net.*',
         'javax.security.sasl.*',
         'javax.security.auth.callback.*',
