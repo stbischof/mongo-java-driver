@@ -66,6 +66,8 @@ afterEvaluate {
     jar.manifest.attributes['Import-Package'] = [
             '!sun.misc.*',  // Used by DirectBufferDeallocator only for java 8
             '!sun.nio.ch.*',  // Used by DirectBufferDeallocator only for java 8
+            'javax.annotation;resolution:=optional',
+            'javax.annotation.meta;resolution:=optional',
             'io.netty.*;resolution:=optional',
             'org.xerial.snappy.*;resolution:=optional',
             'com.github.luben.zstd.*;resolution:=optional',
